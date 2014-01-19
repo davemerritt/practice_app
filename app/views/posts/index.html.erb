@@ -1,2 +1,6 @@
-Daves Blag<br><br>
-<%= link_to 'New Post', new_post_path %>
+<div class="grid-block">
+  <% @posts.each do |post| %>
+    <%= link_to post.title, post %><br><br>
+  <% end %>
+  <%= link_to 'New Post', new_post_path %>
+</div>
