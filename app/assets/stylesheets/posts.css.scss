@@ -7,10 +7,14 @@ $hover-c: #6b0c36;
 $text-c: white;
 $link-c: #797979;
 $link-background: #333;
+$shadow: 0px 0px 8px 0px #000000;
 
 body{
 	font-family: courier;
 	padding-top: 6.5em;
+	background-image: url('');
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 a{
@@ -23,7 +27,6 @@ a{
 
 a:visited{
 	text-decoration: none;
-	color: darken($text-c, 30%);
 }
 
 a:hover{
@@ -35,25 +38,12 @@ li{
 	list-style-type: none;
 }
 
-.header{
-	top: 0;
-	width: 100%;
-	height: 4em;
-	padding: 15px;
-	position: fixed;
-	box-shadow: 0px 0px 8px 0px #000000;
-	background-color: $primary-c;
-	border: 1px solid;
-	border-radius: 5px;
-	z-index: 1;
-}
-
 .grid-block{
   display: inline-block;
   height: 50em;
   width: 13em;
-  padding: 20px;
-  box-shadow: 0px 0px 8px 0px #000000;
+  padding: 2em;
+  box-shadow: $shadow;
   background-color: $primary-c;
   border: 1px solid;
   border-radius: 5px;
@@ -62,37 +52,46 @@ li{
 /* Dropdown menu in css, to avoid potential breakages on certain browsers */
 
 #nav{
+	top: 0;
+	width: 100%;
+	height: 3.5em;
+	padding: 1em;
+	position: fixed;
+	box-shadow: $shadow;
+	background-color: $primary-c;
+	border: 1px solid;
+	border-radius: 5px;
 	list-style: none;
 	font-weight: bold;
 	margin-bottom: 20px;
 	float: left;
 	width: 100%;
-	position: relative;
 	z-index: 5;
 }
 
 #nav li{
 	float: left;
-	margin-right:10px;
+	margin-right: 2em;
 	position: relative;
 }
 
 #nav a{
+	box-shadow: $shadow;
 	border-radius: 5px;
 	display: block;
 	padding: 1.1em;
-	color: #fff;
+	color: $text-c;
 	background: $link-background;
 	text-decoration: none;
 }
 
 nav a:hover{
-	color: #fff;
+	color: $text-c;
 	background: $hover-c;
 }
 
 #nav ul{
-	background: #fff;
+	background: $link-background;
 	background: rgba(255, 255, 255, 0);
 	list-style: none;
 	position: absolute;
