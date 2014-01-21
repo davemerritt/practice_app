@@ -11,10 +11,24 @@ $shadow: 0px 0px 8px 0px #000000;
 
 body{
 	font-family: courier;
-	padding-top: 6.5em;
+	padding-top: 9em;
 	background-image: url('');
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+#header{
+	background-color: darken($primary-c, 25%);
+	border-radius: 5px;
+	box-shadow: $shadow;
+
+	transition: height 2s;
+	-webkit-transition: height 2s;
+}
+
+.header:hover{
+	transition: transform; 
+	background: darken($primary-c, 45%);	
 }
 
 a{
@@ -31,11 +45,6 @@ a:visited{
 
 a:hover{
 	background: $hover-c;
-
-}
-
-li{
-	list-style-type: none;
 }
 
 .grid-block{
@@ -55,7 +64,7 @@ li{
 	top: 0;
 	width: 100%;
 	height: 3.5em;
-	padding: 1em;
+	padding: 2em;
 	position: fixed;
 	box-shadow: $shadow;
 	background-color: $primary-c;
@@ -95,7 +104,7 @@ nav a:hover{
 	background: rgba(255, 255, 255, 0);
 	list-style: none;
 	position: absolute;
-	left:-9999px;
+	visibility: hidden;
 }
 
 #nav ul li{
@@ -108,7 +117,7 @@ nav a:hover{
 }
 
 #nav li:hover ul{
-	left:0;
+	visibility: visible;
 }
 
 #nav li:hover a{
@@ -121,4 +130,4 @@ nav a:hover{
 
 #nav li:hover ul li a:hover{
 	background: $link-background;
-}
+}	
