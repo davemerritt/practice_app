@@ -106,13 +106,13 @@ a:hover{
 	text-align: center;
 	height:200px;
 	opacity: 1;
-	-webkit-transformation: opacity 1s ease-in;
-	transformation: opacity 1s ease-in;
+	-webkit-transition: opacity 1s ease-in-out;  
+	transition: opacity 1s ease-in-out;
 }
 
 .transition:hover{
 	opacity:0;
-	height: auto;
+
 }
 
 /* Dropdown menu in css, to avoid potential breakages on certain browsers */
