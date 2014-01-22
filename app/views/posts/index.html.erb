@@ -1,6 +1,20 @@
-<div class="grid-block">
-  <% @posts.each do |post| %>
-    <%= link_to post.title, post %><br><br><br>
-  <% end %>
-  <%= link_to 'New Post', new_post_path %>
+<div class="container">
+  <div class="grid-block-1">
+  	One 
+  </div>
+  <div class="grid-block-2">
+  	Two 
+  </div>
+    <div class="grid-block-3">
+  	Three
+  </div>
+  <div class="grid-block-4">
+  	Four 
+  </div>
+  <div class="grid-block-wide">
+    <% @posts.each do |post| %>
+      <%= link_to post.title, post %><br><br><br>
+      <% end %>
+    <%= link_to 'New Post', new_post_path %>
+  </div>
 </div>

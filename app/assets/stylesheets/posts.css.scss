@@ -17,20 +17,24 @@ body{
 	background-position: center;
 }
 
+/*
 #header{
 	background-color: darken($primary-c, 25%);
 	border-radius: 5px;
 	box-shadow: $shadow;
-
 	transition: height 2s;
 	-webkit-transition: height 2s;
 }
 
-.header:hover{
+#header:hover{
 	transition: transform; 
-	background: darken($primary-c, 45%);	
+	background-color: #FFCCCC;
+    width:200px;
+    height:200px;
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
 }
-
+*/
 a{
 	padding: 6px;
 	border-radius: 5px;
@@ -47,15 +51,60 @@ a:hover{
 	background: $hover-c;
 }
 
-.grid-block{
-  display: inline-block;
-  height: 50em;
-  width: 13em;
-  padding: 2em;
-  box-shadow: $shadow;
-  background-color: $primary-c;
-  border: 1px solid;
-  border-radius: 5px;
+.container{
+    height: 800px;
+    width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+    box-shadow: $shadow;
+    background-color: $primary-c;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.grid-block-1{
+	margin: 10px;
+	height: 200px; 
+	width: 375px;
+	background-color: darken($primary-c, 15%);
+	opacity: 0.8;
+	float: left;
+}
+
+.grid-block-2{
+	margin: 10px;	
+	height: 200px; 
+	width: 375px;
+	background-color: darken($primary-c, 15%);
+	opacity: 0.8;
+	float: right;
+}
+
+.grid-block-3{
+	margin: 10px;
+	height: 200px; 
+	width: 375px;
+	background-color: darken($primary-c, 15%);
+	opacity: 0.8;
+	float: left;
+}
+
+.grid-block-4{
+	margin: 10px;
+	height: 200px; 
+	width: 375px;
+	background-color: darken($primary-c, 15%);
+	opacity: 0.8;
+	float: right;
+}
+
+.grid-block-wide{
+	margin: 10px;
+	height: 200px; 
+	width: 780px;
+	background-color: darken($primary-c, 15%);
+	opacity: 0.8;
+	display: inline-block;
 }
 
 /* Dropdown menu in css, to avoid potential breakages on certain browsers */

@@ -1,7 +1,9 @@
-<div class="grid-block">
-  <%= simple_form_for @post do |f| %>
-    <%= f.input :title %>
-    <%= f.input :body %>
-    <%= f.button :submit %>
-  <% end %>
+<div class="container">
+  <div class="grid-block-wide">
+    <%= simple_form_for @post do |f| %>
+      <%= f.input :title %>
+      <%= f.input :body %>
+      <%= f.button :submit %>
+    <% end %>
+  </div>
 </div>
