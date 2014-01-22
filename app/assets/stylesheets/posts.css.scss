@@ -67,7 +67,6 @@ a:hover{
 	height: 200px; 
 	width: 375px;
 	background-color: darken($primary-c, 15%);
-	opacity: 0.8;
 	float: left;
 }
 
@@ -76,7 +75,6 @@ a:hover{
 	height: 200px; 
 	width: 375px;
 	background-color: darken($primary-c, 15%);
-	opacity: 0.8;
 	float: right;
 }
 
@@ -85,7 +83,6 @@ a:hover{
 	height: 200px; 
 	width: 375px;
 	background-color: darken($primary-c, 15%);
-	opacity: 0.8;
 	float: left;
 }
 
@@ -94,7 +91,6 @@ a:hover{
 	height: 200px; 
 	width: 375px;
 	background-color: darken($primary-c, 15%);
-	opacity: 0.8;
 	float: right;
 }
 
@@ -103,8 +99,20 @@ a:hover{
 	height: 200px; 
 	width: 780px;
 	background-color: darken($primary-c, 15%);
-	opacity: 0.8;
 	display: inline-block;
+}
+
+.transition{
+	text-align: center;
+	height:200px;
+	opacity: 1;
+	-webkit-transformation: opacity 1s ease-in;
+	transformation: opacity 1s ease-in;
+}
+
+.transition:hover{
+	opacity:0;
+	height: auto;
 }
 
 /* Dropdown menu in css, to avoid potential breakages on certain browsers */
