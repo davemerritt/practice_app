@@ -63,6 +63,7 @@ a:hover{
 }
 
 .grid-block-1{
+	text-align: center;
 	margin: 10px;
 	height: 200px; 
 	width: 375px;
@@ -71,6 +72,7 @@ a:hover{
 }
 
 .grid-block-2{
+	text-align: center;
 	margin: 10px;	
 	height: 200px; 
 	width: 375px;
@@ -79,6 +81,7 @@ a:hover{
 }
 
 .grid-block-3{
+	text-align: center;
 	margin: 10px;
 	height: 200px; 
 	width: 375px;
@@ -87,6 +90,7 @@ a:hover{
 }
 
 .grid-block-4{
+	text-align: center;
 	margin: 10px;
 	height: 200px; 
 	width: 375px;
@@ -95,6 +99,7 @@ a:hover{
 }
 
 .grid-block-wide{
+	text-align: center;
 	margin: 10px;
 	height: 200px; 
 	width: 780px;
@@ -105,13 +110,13 @@ a:hover{
 .transition{
 	text-align: center;
 	height:200px;
-	opacity: 1;
+	opacity: 0;
 	-webkit-transition: opacity 1s ease-in-out;  
 	transition: opacity 1s ease-in-out;
 }
 
 .transition:hover{
-	opacity:0;
+	opacity:1;
 
 }
 
