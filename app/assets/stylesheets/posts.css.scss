@@ -122,11 +122,15 @@ a:hover{
 
 /* Dropdown menu in css, to avoid potential breakages on certain browsers */
 
+.aligner{
+	width: 450px;
+}
+
 #nav{
 	top: 0;
-	width: 100%;
 	height: 3.5em;
 	padding: 2em;
+	margin: 0 auto;
 	position: fixed;
 	box-shadow: $shadow;
 	background-color: $primary-c;
@@ -134,10 +138,9 @@ a:hover{
 	border-radius: 5px;
 	list-style: none;
 	font-weight: bold;
-	margin-bottom: 20px;
 	float: left;
 	width: 100%;
-	z-index: 5;
+	z-index: 1;
 }
 
 #nav li{
