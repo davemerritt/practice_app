@@ -11,7 +11,7 @@ $shadow: 0px 0px 8px 0px #000000;
 
 body{
 	font-family: courier;
-	padding-top: 9em;
+	padding-top: 6em;
 }
 
 a{
@@ -26,82 +26,6 @@ a:visited{
 a:hover{
 	color: lighten($primary-c, 15%);	
 }
-
-
-/* Dropdown menu in css, to avoid potential breakages on certain browsers */
-
-#nav{
-	top: 0;
-	padding: 2em;
-	margin: 0 auto;
-	height: 3.5em;
-	width: 100%;
-	position: fixed;
-	background-color: $primary-c;
-	border: 1px solid;
-	border-radius: 5px;
-	box-shadow: $shadow;
-	font-weight: bold;
-	list-style: none;
-	float: left;
-	z-index: 1;
-}
-
-#nav li{
-	float: left;
-	margin-right: 2em;
-	position: relative;
-}
-
-#nav a{
-	color: $text-c;
-	padding: 1.1em;
-	background: $link-background;
-	border-radius: 5px;
-	box-shadow: $shadow;
-	text-decoration: none;
-	display: block;
-}
-
-nav a:hover{
-	color: $text-c;
-	background: $hover-c;
-}
-
-#nav ul{
-	background: $link-background;
-	background: rgba(255, 255, 255, 0);
-	list-style: none;
-	position: absolute;
-	visibility: hidden;
-}
-
-#nav ul li{
-	padding-top: 1px;
-	float: none;
-}
-
-#nav ul a{
- 	white-space: nowrap;
-}
-
-#nav li:hover ul{
-	visibility: visible;
-}
-
-#nav li:hover a{
-	background: $hover-c;
-}
-
-#nav li:hover ul a{
-	text-decoration: none;
-}
-
-#nav li:hover ul li a:hover{
-	background: $link-background;
-}	
-
-/*end of dropdown */
 
 .large-container{
 	width: 100%;
@@ -178,20 +102,86 @@ nav a:hover{
 
 .leftnav{
 	margin: 12px;
-	height: 800px;
+	height: 400px;
 	width: 210px;
 	background-color: darken($primary-c, 10%);
 	float: left;
+	position: relative;
+	z-index: 1;
 }
 
 .rightnav{
 	margin: 12px;
-	height: 800px;
+	height: 400px;
 	width: 210px;
 	background-color: darken($primary-c, 10%);
 	float: left;
+	position: relative;
+	z-index: 1;
 }
 
 .aligner{
 	width: 450px;
+}
+
+#dropdown{
+	padding-top: 10px;
+	padding-bottom: 50px;
+	margin-bottom: 10px;
+	border: 1px;
+	list-style: none;
+	font-weight: bold;
+	background-color: darken($primary-c, 25%);		
+	position: relative;
+	z-index: 5;
+
+}
+
+#dropdown li{
+	list-style: none;
+	position: relative;
+}
+
+#dropdown a{
+	display: block;
+	padding: 5px;
+	color: #fff;
+	background: darken($primary-c, 25%);
+	text-decoration: none;
+}
+
+#dropdown a:hover{
+	color: #fff;
+	background: darken($primary-c, 25%);
+}
+
+#dropdown ul{
+	background: #fff;
+	background: rgba(255, 255, 255, 0);
+	list-style: none;
+	position: absolute;
+	visibility: hidden;
+}
+
+#dropdown ul li{
+	float: none;
+}
+
+#dropdown ul a{
+    white-space: nowrap; 
+}
+#dropdown li:hover ul{
+	visibility: visible;
+}
+
+#dropdown li:hover a{
+	text-decoration: none;
+}
+
+#dropdown li:hover ul li a:hover{
+	background: #333;
+}
+
+#dropdown li:hover ul li a:hover{
+	background: #333;
 }
