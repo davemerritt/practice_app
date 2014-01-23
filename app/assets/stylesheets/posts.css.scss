@@ -12,35 +12,11 @@ $shadow: 0px 0px 8px 0px #000000;
 body{
 	font-family: courier;
 	padding-top: 9em;
-	background-image: url('');
-	background-repeat: no-repeat;
-	background-position: center;
 }
 
-/*
-#header{
-	background-color: darken($primary-c, 25%);
-	border-radius: 5px;
-	box-shadow: $shadow;
-	transition: height 2s;
-	-webkit-transition: height 2s;
-}
-
-#header:hover{
-	transition: transform; 
-	background-color: #FFCCCC;
-    width:200px;
-    height:200px;
-    -webkit-transform:rotate(180deg);
-    transform:rotate(180deg);
-}
-*/
 a{
-	padding: 6px;
-	border-radius: 5px;
-	background: $link-background;
 	text-decoration: none;
-	color: $text-c;
+	color: black;
 }
 
 a:visited{
@@ -48,98 +24,26 @@ a:visited{
 }
 
 a:hover{
-	background: $hover-c;
+	color: lighten($primary-c, 15%);	
 }
 
-.container{
-    height: 800px;
-    width: 800px;
-    margin: 0 auto;
-    padding: 2em;
-    box-shadow: $shadow;
-    background-color: $primary-c;
-    border: 1px solid;
-    border-radius: 5px;
-}
-
-.grid-block-1{
-	text-align: center;
-	margin: 10px;
-	height: 200px; 
-	width: 375px;
-	background-color: darken($primary-c, 15%);
-	float: left;
-}
-
-.grid-block-2{
-	text-align: center;
-	margin: 10px;	
-	height: 200px; 
-	width: 375px;
-	background-color: darken($primary-c, 15%);
-	float: right;
-}
-
-.grid-block-3{
-	text-align: center;
-	margin: 10px;
-	height: 200px; 
-	width: 375px;
-	background-color: darken($primary-c, 15%);
-	float: left;
-}
-
-.grid-block-4{
-	text-align: center;
-	margin: 10px;
-	height: 200px; 
-	width: 375px;
-	background-color: darken($primary-c, 15%);
-	float: right;
-}
-
-.grid-block-wide{
-	text-align: center;
-	margin: 10px;
-	height: 200px; 
-	width: 780px;
-	background-color: darken($primary-c, 15%);
-	display: inline-block;
-}
-
-.transition{
-	text-align: center;
-	height:200px;
-	opacity: 0;
-	-webkit-transition: opacity 1s ease-in-out;  
-	transition: opacity 1s ease-in-out;
-}
-
-.transition:hover{
-	opacity:1;
-
-}
 
 /* Dropdown menu in css, to avoid potential breakages on certain browsers */
 
-.aligner{
-	width: 450px;
-}
-
 #nav{
 	top: 0;
-	height: 3.5em;
 	padding: 2em;
 	margin: 0 auto;
+	height: 3.5em;
+	width: 100%;
 	position: fixed;
-	box-shadow: $shadow;
 	background-color: $primary-c;
 	border: 1px solid;
 	border-radius: 5px;
-	list-style: none;
+	box-shadow: $shadow;
 	font-weight: bold;
+	list-style: none;
 	float: left;
-	width: 100%;
 	z-index: 1;
 }
 
@@ -150,13 +54,13 @@ a:hover{
 }
 
 #nav a{
-	box-shadow: $shadow;
-	border-radius: 5px;
-	display: block;
-	padding: 1.1em;
 	color: $text-c;
+	padding: 1.1em;
 	background: $link-background;
+	border-radius: 5px;
+	box-shadow: $shadow;
 	text-decoration: none;
+	display: block;
 }
 
 nav a:hover{
@@ -196,3 +100,98 @@ nav a:hover{
 #nav li:hover ul li a:hover{
 	background: $link-background;
 }	
+
+/*end of dropdown */
+
+.large-container{
+	width: 100%;
+}
+
+.small-container{
+    height: 800px;
+    width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: $shadow;
+    background-color: $primary-c;
+    float: left;
+}
+
+.grid-block-1{
+	margin: 10px;
+	height: 200px; 
+	width: 375px;
+	background-color: darken($primary-c, 15%);
+	float: left;
+	text-align: center;
+}
+
+.grid-block-2{
+	margin: 10px;	
+	height: 200px; 
+	width: 375px;
+	background-color: darken($primary-c, 15%);
+	float: right;
+	text-align: center;
+}
+
+.grid-block-3{
+	text-align: center;
+	margin: 10px;
+	height: 200px; 
+	width: 375px;
+	background-color: darken($primary-c, 15%);
+	float: left;
+}
+
+.grid-block-4{
+	margin: 10px;
+	height: 200px; 
+	width: 375px;
+	background-color: darken($primary-c, 15%);
+	float: right;
+	text-align: center;
+}
+
+.grid-block-wide{
+	padding: 10px;
+	height: 200px; 
+	width: 780px;
+	background-color: darken($primary-c, 15%);
+	text-align: center;
+	display: inline-block;
+}
+
+.transition{
+	height:200px;
+	text-align: center;
+	opacity: 0;
+	-webkit-transition: opacity 1s ease-in-out;  
+	transition: opacity 1s ease-in-out;
+}
+
+.transition:hover{
+	opacity:1;
+}
+
+.leftnav{
+	margin: 12px;
+	height: 800px;
+	width: 210px;
+	background-color: darken($primary-c, 10%);
+	float: left;
+}
+
+.rightnav{
+	margin: 12px;
+	height: 800px;
+	width: 210px;
+	background-color: darken($primary-c, 10%);
+	float: left;
+}
+
+.aligner{
+	width: 450px;
+}

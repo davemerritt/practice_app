@@ -1,34 +1,40 @@
-<div class="container">
-  <div class="grid-block-1">
-    <h2>Who am I?</h2> 
-    <div class="transition">
-      My name is David Merritt, and I am a new graduate of Bitmaker Labs!   
-    </div>  
+<div class="large-container">
+  <div class="leftnav">
   </div>
-  <div class="grid-block-2">
-    <h2>What do I do?</h2>
-    <div class="transition">
-  	  I use Ruby, Rails, and JavaScript, html, and css as a means to my ends, 
-      and am enjoying learning more about them!
-    </div> 
-  </div>
-  <div class="grid-block-3">
-    <h2>What have I done?</h2>
-    <div class="transition">
-      Here's a <a href="http://musicianfinder.herokuapp.com/">link</a> to a social network for musicians
-      that I worked on with Erich Welz!
+  <div class="small-container">
+    <div class="grid-block-1">
+      <h2>Who am I?</h2> 
+      <div class="transition">
+        My name is David Merritt, and I am a recent graduate of Bitmaker Labs!   
+      </div>  
+    </div>
+    <div class="grid-block-2">
+      <h2>What do I do?</h2>
+      <div class="transition">
+    	  I use Ruby, Rails, and JavaScript, html, and css as a means to my ends, 
+        and am enjoying learning more about them!
+      </div> 
+    </div>
+    <div class="grid-block-3">
+      <h2>What have I done?</h2>
+      <div class="transition">
+        Here's a <a href="http://musicianfinder.herokuapp.com/">link</a> to a social network for musicians
+        that I worked on with Erich Welz!
+      </div>
+    </div>
+    <div class="grid-block-4">
+    	<h2>How can you find me?</h2>
+      <div class="transition">
+        You're welcome to call, email, or use whatever medium you choose!  
+      </div> 
+    </div>
+    <div class="grid-block-wide">
+      <% @posts.each do |post| %>
+        <%= link_to post.title, post %><br><br><br>
+        <% end %>
+      <%= link_to 'New Post', new_post_path %>
     </div>
   </div>
-  <div class="grid-block-4">
-  	<h2>How can you find me?</h2>
-    <div class="transition">
-      You're welcome to call, email, or use whatever medium you choose!  
-    </div> 
-  </div>
-  <div class="grid-block-wide">
-    <% @posts.each do |post| %>
-      <%= link_to post.title, post %><br><br><br>
-      <% end %>
-    <%= link_to 'New Post', new_post_path %>
+  <div class="rightnav">
   </div>
 </div>
