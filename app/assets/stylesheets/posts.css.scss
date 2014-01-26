@@ -2,20 +2,24 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 $primary-c: #f2f2f2;
 $hover-c: #6b0c36;
 $text-c: white;
 $link-c: #797979;
 $link-background: #333;
-$shadow: 0px 0px 8px 0px #000000;
-
+$shadow: 4px 4px 4px #aaa;
+    
 body{
-	font-family: courier;
+	font-family: 'Rosarivo', serif;
+    text-shadow: $shadow;
 	padding-top: 6em;
 	margin: 0;
 }
 
 a{
+	font-family: 'Offside', serif;
+    font-size: 15px;
 	text-decoration: none;
 	color: black;
 	transition: font 0.3s ease-in-out;
@@ -36,15 +40,16 @@ a:hover{
 	background-color: $primary-c;
  	box-shadow: 0px 1px 50px #5E5E5E;
  	position: fixed;
- 	top:0px;
+ 	top: 0px;
  	z-index: 100;
 }
 
 .title{
+	font-family: 'Rosarivo', serif;
 	margin-top: 8px;
 	margin-bottom: 8px;
-	font-size:25px;
-	font-weight:bold;	
+	font-size: 25px;
+	font-weight: bold;	
 }
 
 .large-container{
